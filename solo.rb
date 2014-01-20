@@ -31,7 +31,7 @@ log_location STDOUT #"/var/log/chef/solo.log"
 # different from 'normal' client mode as solo is actually downloading (or
 # using) the specified cookbooks in this location.
 
-file_cache_path "/var/chef/cache"
+file_cache_path "/home/ec2-user/chef-repo/cache"
 
 # cookbook_path specifies where solo should look for cookbooks it will use.
 # valid value is a string, or array of strings of filesystem directory locations.

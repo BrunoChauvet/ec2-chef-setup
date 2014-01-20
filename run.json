@@ -1,0 +1,3 @@
+{
+  "run_list": [ "recipe[yum]", "recipe[openssl]", "recipe[build-essential]", "recipe[apache2]", "recipe[java]", "recipe[mysql]", "recipe[tomcat]" ]
+}

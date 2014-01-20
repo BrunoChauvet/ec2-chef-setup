@@ -54,4 +54,5 @@ sudo yum --quiet install python-pip
 sudo pip install --upgrade awscli
 
 # Run chef solo
+cd /home/ec2-user/ec2-chef-setup
 sudo chef-solo -c solo.rb -j run.json

@@ -39,7 +39,7 @@ file_cache_path "/var/chef/cache"
 # this as a search location, in Array order. It should be a subdirectory of
 # file_cache_path, above.
 
-cookbook_path [ "/home/ec2-user/cookbooks", "/home/ec2-user/vendor/cookbooks" ]
+cookbook_path [ "/home/ec2-user/chef-repo/cookbooks" ]
 
 # recipe_url specifies a remote URL to retrieve a tarball of cookbooks.
 # Corresponds to chef-solo -r

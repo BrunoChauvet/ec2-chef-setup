@@ -2,9 +2,8 @@
   "mysql": {
     "server_root_password": "GR3Y707",
     "server_repl_password": "GR3Y707",
-    "data_dir": "/home/ec2-user/data",
-    "remove_test_database": true,
-
+    "server_debian_password": "GR3Y707",
+    "remove_test_database": true
   },
   "database": {
     "name": "greyhound",
@@ -16,5 +15,7 @@
     "recipe[apache2]",
     "recipe[java]",
     "recipe[mysql::server]",
-    "recipe[tomcat]" ]
+    "recipe[tomcat]",
+    "recipe[greyhound]"
+  ]
 }

@@ -40,6 +40,18 @@ knife cookbook site download mysql
 tar zxf mysql*
 rm mysql*.tar.gz
 
+knife cookbook site download postgres
+tar zxf postgres*
+rm postgres*.tar.gz
+
+knife cookbook site download aws
+tar zxf aws*
+rm aws*.tar.gz
+
+knife cookbook site download xfs
+tar zxf xfs*
+rm xfs*.tar.gz
+
 knife cookbook site download database
 tar zxf database*
 rm database*.tar.gz
@@ -56,7 +68,7 @@ rm tomcat*.tar.gz
 cp -R /home/ec2-user/ec2-chef-setup/greyhound /home/ec2-user/chef-repo/cookbooks
 
 # Install AWS tools
-sudo yum --quiet install python-pip
+sudo yum -y install python-pip
 sudo pip install --upgrade awscli
 
 # Run chef solo

@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash -ex
 
 # User data to be applied on the EC2 instance
 sudo yum -y update

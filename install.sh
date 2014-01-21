@@ -24,6 +24,10 @@ knife cookbook site download yum
 tar zxf yum*
 rm yum*.tar.gz
 
+knife cookbook site download apt
+tar zxf apt*
+rm apt*.tar.gz
+
 knife cookbook site download build-essential
 tar zxf build-essential*
 rm build-essential*.tar.gz
@@ -40,9 +44,9 @@ knife cookbook site download mysql
 tar zxf mysql*
 rm mysql*.tar.gz
 
-knife cookbook site download postgres
-tar zxf postgres*
-rm postgres*.tar.gz
+knife cookbook site download postgresql
+tar zxf postgresql*
+rm postgresql*.tar.gz
 
 knife cookbook site download aws
 tar zxf aws*

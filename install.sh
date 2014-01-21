@@ -40,6 +40,10 @@ knife cookbook site download mysql
 tar zxf mysql*
 rm mysql*.tar.gz
 
+knife cookbook site download database
+tar zxf database*
+rm database*.tar.gz
+
 knife cookbook site download java
 tar zxf java*
 rm java*.tar.gz
@@ -48,6 +52,8 @@ knife cookbook site download tomcat
 tar zxf tomcat*
 rm tomcat*.tar.gz
 
+# Copy local recipes
+cp -R /home/ec2-user/ec2-chef-setup/greyhound /home/ec2-user/chef-repo/cookbooks
 
 # Install AWS tools
 sudo yum --quiet install python-pip

@@ -1,3 +1,20 @@
 {
-  "run_list": [ "recipe[yum]", "recipe[openssl]", "recipe[build-essential]", "recipe[apache2]", "recipe[java]", "recipe[mysql]", "recipe[tomcat]" ]
+  "mysql": {
+    "server_root_password": "GR3Y707",
+    "server_repl_password": "GR3Y707",
+    "data_dir": "/home/ec2-user/data",
+    "remove_test_database": true,
+
+  },
+  "database": {
+    "name": "greyhound",
+    "db_username": "greyhound",
+    "db_password": "gr3yh0und!"
+  },
+  "run_list": [
+    "recipe[yum]", "recipe[openssl]", "recipe[build-essential]",
+    "recipe[apache2]",
+    "recipe[java]",
+    "recipe[mysql::server]",
+    "recipe[tomcat]" ]
 }
